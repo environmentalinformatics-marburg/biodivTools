@@ -3,5 +3,7 @@
 export(compSpecRichBExpVegReleves)
 export(readBExpLUI)
 export(readBExpPoly)
+export(readBExpSMI)
+export(readBExpStandStruc)
 export(readBExpVegReleves)
 import(vegan)

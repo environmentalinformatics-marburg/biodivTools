@@ -21,10 +21,9 @@ DFG Biodiversity Exploratories.
 }
 
 }
-\author{
-Thomas Nauss
-}
 \references{
 NONE
 }
-
+\author{
+Thomas Nauss
+}

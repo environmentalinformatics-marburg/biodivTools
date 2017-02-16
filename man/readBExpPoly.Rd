@@ -4,10 +4,12 @@
 \alias{readBExpPoly}
 \title{Read plot polygon data}
 \usage{
-readBExpPoly(shp, crs, ...)
+readBExpPoly(shp, crs = NULL, ...)
 }
 \arguments{
 \item{shp}{Full path and name of the shp file.}
+
+\item{crs}{CRS information in order to reproject the polygons.}
 }
 \value{
 A \code{SpatialPolygonDataFrame} object.
@@ -21,10 +23,9 @@ adjust the plot IDs.
 }
 
 }
-\author{
-Thomas Nauss
-}
 \references{
 NONE
 }
-
+\author{
+Thomas Nauss
+}

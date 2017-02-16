@@ -27,5 +27,10 @@ readBExpLUI <- function(filepath, ...){
   df_lui$Std_procedure.exploratory. <- NULL
   colnames(df_lui)[colnames(df_lui) == "Std_procedure.year."] <- "year"
   df_lui$year <- substr(df_lui$year,12,15)
+  df_lui$EP.Plotid <- as.character(df_lui$EP.Plotid)
+  df_lui$EP.Plotid[nchar(df_lui$EP.Plotid) == 4] <- paste0(
+    substr(df_lui$EP.Plotid[nchar(df_lui$EP.Plotid) == 4], 1, 3), "0",
+    substr(df_lui$EP.Plotid[nchar(df_lui$EP.Plotid) == 4], 4, 4))
+  df_lui$EP.Plotid <- as.factor(df_lui$EP.Plotid)
   return(df_lui)
 }
