@@ -27,5 +27,6 @@ readBExpSMI <- function(filepath, ...){
   df_smi$Exploratory <- NULL
   df_smi$EP_Plotid <- NULL
   colnames(df_smi)[1] <- "EPID"
+  df_smi$SMI = as.numeric(as.character(df_smi$SMI))
   return(df_smi)
 }
