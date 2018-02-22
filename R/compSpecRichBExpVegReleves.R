@@ -23,8 +23,6 @@
 #' @name compSpecRichBExpVegReleves
 #'
 compSpecRichBExpVegReleves <- function(vegrel){
-  vegrel$Year <- substr(vegrel$Year, 5, 8)
-
   vegrel_div <- lapply(unique(vegrel$Year), function(y){
     act <- vegrel[vegrel$Year == y,]
     act$cover_bin <- act$cover
