@@ -23,7 +23,7 @@
 #' @name readBExpVegHeaderData
 #'
 readBExpVegHeaderData <- function(filepath){
-  df_vegrel <- read.table(filepath, header = TRUE, sep = ";", dec = ".")
+  df_vegrel <- read.table(filepath, header = TRUE, sep = ";", dec = ",")
   colnames(df_vegrel)[which(colnames(df_vegrel) == "Useful_EP_PlotID")] = "EPID"
   df_vegrel$EPID <- as.character(df_vegrel$EPID)
   df_vegrel$EPID[nchar(df_vegrel$EPID) == 4] <- paste0(
