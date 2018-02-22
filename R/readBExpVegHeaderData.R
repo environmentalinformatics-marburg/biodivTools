@@ -30,6 +30,6 @@ readBExpVegHeaderData <- function(filepath){
     substr(df_vegrel$EPID[nchar(df_vegrel$EPID) == 4], 1, 3), "0",
     substr(df_vegrel$EPID[nchar(df_vegrel$EPID) == 4], 4, 4))
   df_vegrel$PlotID = NULL
-  df_vegrel$EPPlotID = NULL
+  df_vegrel$EpPlotID = NULL
   return(df_vegrel)
 }
