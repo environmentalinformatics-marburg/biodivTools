@@ -1,6 +1,6 @@
-#'
-#' @export readBExplLUT
 #' PREPROCESS LAND-USE DATA
+#' @export readBExplLUT
+#'
 readBExplLUT <- function(filepath, ...){
   df_lut <- read.table(filepath, header = TRUE, sep = ";", dec = ",")
   df_lut$notes<-NULL
